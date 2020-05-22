@@ -1,6 +1,7 @@
 import styled from '@emotion/styled/macro'
 import WebFont from 'webfontloader'
 import styledMap from 'styled-map'
+import { NavLink } from 'react-router-dom'
 
 WebFont.load({
   google: {
@@ -18,12 +19,12 @@ export const styleVariables = {
   secondaryFontFamily: `'Varela Round', 'sans-serif'`,
   fontSizeH1: '2.2rem',
   fontSizeH2: '2rem',
-  fontSizeH3: '1.8rem',
+  fontSizeH3: '1.6rem',
   fontSizeH4: null,
   fontSizeH5: null,
   fontSizeH6: null,
   fontSizeH7: null,
-  fontSizeP: '1.6rem',
+  fontSizeP: '1.4rem',
   fontSizeSmall: '1.2rem',
   boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
 }
@@ -70,11 +71,21 @@ const alignContentMap = styledMap`
   acfe: flex-end;
   acfs: flex-start;
 `
+const alignSelfMap = styledMap`
+  asb: baseline;
+  ass: stretch;
+  asc: center;
+  asfe: flex-end;
+  asfs: flex-start;
+  auto: auto;
+`
+
 const colorMap = styledMap`
   white: white;
   secondaryColor: ${styleVariables.secondaryBackgroundColor};
   brandColor: ${styleVariables.mainBrandColor};
   mainColor: ${styleVariables.mainBackgroundColor};
+  none: transparent;
 `
 
 const boxShadowMap = styledMap`
@@ -98,6 +109,7 @@ export const FlexContainer = styled.div`
   justify-content: ${justifyContentMap};
   align-items: ${alignItemsMap};
   align-content: ${alignContentMap};
+  align-self: ${alignSelfMap};
   flex-wrap: ${flexWrapMap};
   width: ${(props) => props.w};
   height: ${(props) => props.h};
@@ -131,6 +143,7 @@ export const BasicImg = styled.img`
 `
 
 export const H1 = styled.h1`
+  align-self: ${alignSelfMap};
   width: ${(props) => props.w};
   height: ${(props) => props.h};
   margin: ${(props) => props.m};
@@ -146,6 +159,7 @@ export const H1 = styled.h1`
   text-align: ${(props) => props.ta};
 `
 export const H2 = styled.h2`
+  align-self: ${alignSelfMap};
   width: ${(props) => props.w};
   height: ${(props) => props.h};
   margin: ${(props) => props.m};
@@ -161,6 +175,7 @@ export const H2 = styled.h2`
   text-align: ${(props) => props.ta};
 `
 export const H3 = styled.h3`
+  align-self: ${alignSelfMap};
   width: ${(props) => props.w};
   height: ${(props) => props.h};
   margin: ${(props) => props.m};
@@ -177,6 +192,7 @@ export const H3 = styled.h3`
 `
 
 export const P = styled.p`
+  align-self: ${alignSelfMap};
   width: ${(props) => props.w};
   height: ${(props) => props.h};
   margin: ${(props) => props.m};
@@ -190,9 +206,11 @@ export const P = styled.p`
   font-family: ${styleVariables.mainFontFamily};
   text-align: ${(props) => props.ta};
   text-decoration: ${textDecorationMap};
+  line-height: 1.25;
 `
 
 export const Button = styled.button`
+  align-self: ${alignSelfMap};
   width: ${(props) => props.w};
   height: ${(props) => props.h};
   margin: ${(props) => props.m};
@@ -212,6 +230,7 @@ export const Button = styled.button`
   }
 `
 export const TextInput = styled.input`
+  align-self: ${alignSelfMap};
   width: ${(props) => props.w};
   height: ${styleVariables.fontSizeP};
   margin: ${(props) => props.m};
@@ -221,4 +240,30 @@ export const TextInput = styled.input`
   min-height: ${(props) => props.minh};
   max-height: ${(props) => props.maxh};
   font-size: ${styleVariables.fontSizeSmall};
+`
+export const EmoNavLink = styled.a`
+  align-self: ${alignSelfMap};
+  width: ${(props) => props.w};
+  height: ${(props) => props.h};
+  margin: ${(props) => props.m};
+  padding: ${(props) => props.p};
+  min-width: ${(props) => props.minw};
+  max-width: ${(props) => props.maxw};
+  min-height: ${(props) => props.minh};
+  max-height: ${(props) => props.maxh};
+  color: ${(props) => props.color || styleVariables.mainFontColor};
+  background-color: ${(props) => props.bgcolor || colorMap};
+  border-radius: ${(props) => props.br};
+  font-family: ${styleVariables.mainFontFamily};
+  font-size: ${styleVariables.fontSizeSmall};
+  font-weight: ${(props) => props.bold};
+  text-decoration: ${(props) => props.textdec || 'none'};
+  border: none;
+  &:hover {
+    filter: brightness(0.9);
+  }
+`
+export const Span = styled.span`
+  display: inline-block;
+  margin-right: 10px;
 `

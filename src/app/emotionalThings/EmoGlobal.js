@@ -12,6 +12,7 @@ const EmoGlobal = () => (
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         font-smoothing: antialiased;
+        scroll-behavior: smooth; /*need to move into breakpoint*/
       }
     `}
   />

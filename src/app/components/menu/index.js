@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlexContainer, Button } from '../../emotionalThings/EmoTools'
+import { FlexContainer, EmoNavLink } from '../../emotionalThings/EmoTools'
 
 const Menu = () => (
   <FlexContainer
@@ -11,21 +11,21 @@ const Menu = () => (
     jcsb
     bgcolor='rgba(46, 49, 49, .7)'
     aic
-    p='0 10px 0 10px'
+    p='0 15px 0 15px'
     z={999}
   >
-    <Button bgcolor='rgba(46, 49, 49, .0)' bold='500'>
+    <EmoNavLink href='/#home' color='white' bold='600'>
       Home
-    </Button>
-    <Button bgcolor='rgba(46, 49, 49, .0)' bold='500'>
+    </EmoNavLink>
+    <EmoNavLink href='/#about' color='white' bold='600'>
       About
-    </Button>
-    <Button bgcolor='rgba(46, 49, 49, .0)' bold='500'>
+    </EmoNavLink>
+    <EmoNavLink href='/#portfolio' color='white' bold='600'>
       Portfolio
-    </Button>
-    <Button bgcolor='rgba(46, 49, 49, .0)' bold='500'>
+    </EmoNavLink>
+    <EmoNavLink href='/#contact' color='white' bold='600'>
       Contact
-    </Button>
+    </EmoNavLink>
   </FlexContainer>
 )
 
