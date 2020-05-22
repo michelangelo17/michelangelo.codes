@@ -1,7 +1,6 @@
 import styled from '@emotion/styled/macro'
 import WebFont from 'webfontloader'
 import styledMap from 'styled-map'
-import { NavLink } from 'react-router-dom'
 
 WebFont.load({
   google: {
@@ -26,7 +25,7 @@ export const styleVariables = {
   fontSizeH7: null,
   fontSizeP: '1.4rem',
   fontSizeSmall: '1.2rem',
-  boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+  boxShadow: '0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.1)',
 }
 
 //set main background colour
@@ -80,6 +79,14 @@ const alignSelfMap = styledMap`
   auto: auto;
 `
 
+const justifySelfMap = styledMap`
+  jsst: stretch;
+  jsc: center;
+  jse: end;
+  jss: start;
+  auto: auto;
+`
+
 const colorMap = styledMap`
   white: white;
   secondaryColor: ${styleVariables.secondaryBackgroundColor};
@@ -110,6 +117,7 @@ export const FlexContainer = styled.div`
   align-items: ${alignItemsMap};
   align-content: ${alignContentMap};
   align-self: ${alignSelfMap};
+  justify-self: ${justifySelfMap};
   flex-wrap: ${flexWrapMap};
   width: ${(props) => props.w};
   height: ${(props) => props.h};
@@ -127,7 +135,13 @@ export const FlexContainer = styled.div`
   border-radius: ${(props) => props.br};
   box-shadow: ${boxShadowMap};
   z-index: ${(props) => props.z};
+  text-decoration: ${(props) => props.td};
+  border: ${(props) => props.border};
   position: ${(props) => props.pos || 'relative'};
+  top: ${(props) => props.top};
+  right: ${(props) => props.right};
+  bottom: ${(props) => props.bottom};
+  left: ${(props) => props.left};
 `
 
 export const BasicImg = styled.img`
@@ -144,6 +158,7 @@ export const BasicImg = styled.img`
 
 export const H1 = styled.h1`
   align-self: ${alignSelfMap};
+  justify-self: ${justifySelfMap};
   width: ${(props) => props.w};
   height: ${(props) => props.h};
   margin: ${(props) => props.m};
@@ -152,14 +167,15 @@ export const H1 = styled.h1`
   max-width: ${(props) => props.maxw};
   min-height: ${(props) => props.minh};
   max-height: ${(props) => props.maxh};
-  font-size: ${styleVariables.fontSizeH1};
+  font-size: ${(props) => props.fs || styleVariables.fontSizeH1};
   color: ${(props) => props.color || styleVariables.mainFontColor};
   font-family: ${styleVariables.mainFontFamily};
-  font-weight: bold;
+  font-weight: ${(props) => props.fw || 'bold'};
   text-align: ${(props) => props.ta};
 `
 export const H2 = styled.h2`
   align-self: ${alignSelfMap};
+  justify-self: ${justifySelfMap};
   width: ${(props) => props.w};
   height: ${(props) => props.h};
   margin: ${(props) => props.m};
@@ -168,14 +184,15 @@ export const H2 = styled.h2`
   max-width: ${(props) => props.maxw};
   min-height: ${(props) => props.minh};
   max-height: ${(props) => props.maxh};
-  font-size: ${styleVariables.fontSizeH2};
+  font-size: ${(props) => props.fs || styleVariables.fontSizeH2};
   color: ${(props) => props.color || styleVariables.mainFontColor};
   font-family: ${styleVariables.mainFontFamily};
-  font-weight: bold;
+  font-weight: ${(props) => props.fw || 'bold'};
   text-align: ${(props) => props.ta};
 `
 export const H3 = styled.h3`
   align-self: ${alignSelfMap};
+  justify-self: ${justifySelfMap};
   width: ${(props) => props.w};
   height: ${(props) => props.h};
   margin: ${(props) => props.m};
@@ -184,15 +201,16 @@ export const H3 = styled.h3`
   max-width: ${(props) => props.maxw};
   min-height: ${(props) => props.minh};
   max-height: ${(props) => props.maxh};
-  font-size: ${styleVariables.fontSizeH3};
+  font-size: ${(props) => props.fs || styleVariables.fontSizeH3};
   color: ${(props) => props.color || styleVariables.mainFontColor};
   font-family: ${styleVariables.mainFontFamily};
-  font-weight: bold;
+  font-weight: ${(props) => props.fw || 'bold'};
   text-align: ${(props) => props.ta};
 `
 
 export const P = styled.p`
   align-self: ${alignSelfMap};
+  justify-self: ${justifySelfMap};
   width: ${(props) => props.w};
   height: ${(props) => props.h};
   margin: ${(props) => props.m};
@@ -201,7 +219,7 @@ export const P = styled.p`
   max-width: ${(props) => props.maxw};
   min-height: ${(props) => props.minh};
   max-height: ${(props) => props.maxh};
-  font-size: ${styleVariables.fontSizeP};
+  font-size: ${(props) => props.fs || styleVariables.fontSizeP};
   color: ${(props) => props.color || styleVariables.mainFontColor};
   font-family: ${styleVariables.mainFontFamily};
   text-align: ${(props) => props.ta};
@@ -211,6 +229,7 @@ export const P = styled.p`
 
 export const Button = styled.button`
   align-self: ${alignSelfMap};
+  justify-self: ${justifySelfMap};
   width: ${(props) => props.w};
   height: ${(props) => props.h};
   margin: ${(props) => props.m};
@@ -222,7 +241,7 @@ export const Button = styled.button`
   color: white;
   background-color: ${(props) => props.bgcolor || buttonColorMap};
   border-radius: ${(props) => props.br};
-  font-size: ${styleVariables.fontSizeSmall};
+  font-size: ${(props) => props.fs || styleVariables.fontSizeSmall};
   font-weight: ${(props) => props.bold};
   border: none;
   &:hover {
@@ -231,6 +250,7 @@ export const Button = styled.button`
 `
 export const TextInput = styled.input`
   align-self: ${alignSelfMap};
+  justify-self: ${justifySelfMap};
   width: ${(props) => props.w};
   height: ${styleVariables.fontSizeP};
   margin: ${(props) => props.m};
@@ -239,10 +259,11 @@ export const TextInput = styled.input`
   max-width: ${(props) => props.maxw};
   min-height: ${(props) => props.minh};
   max-height: ${(props) => props.maxh};
-  font-size: ${styleVariables.fontSizeSmall};
+  font-size: ${(props) => props.fs || styleVariables.fontSizeSmall};
 `
 export const EmoNavLink = styled.a`
   align-self: ${alignSelfMap};
+  justify-self: ${justifySelfMap};
   width: ${(props) => props.w};
   height: ${(props) => props.h};
   margin: ${(props) => props.m};
@@ -255,7 +276,7 @@ export const EmoNavLink = styled.a`
   background-color: ${(props) => props.bgcolor || colorMap};
   border-radius: ${(props) => props.br};
   font-family: ${styleVariables.mainFontFamily};
-  font-size: ${styleVariables.fontSizeSmall};
+  font-size: ${(props) => props.fs || styleVariables.fontSizeP};
   font-weight: ${(props) => props.bold};
   text-decoration: ${(props) => props.textdec || 'none'};
   border: none;
