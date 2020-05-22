@@ -3,6 +3,7 @@ import Splash from './components/splash'
 import EmoGlobal from './emotionalThings/EmoGlobal'
 import Menu from './components/menu'
 import About from './components/about'
+import Contact from './components/contact'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Menu />
       <Splash />
       <About />
+      <Contact />
     </>
   )
 }
