@@ -8,10 +8,10 @@ const C = () => (
     <PortfolioH3 asc>Simple Currency Exchange</PortfolioH3>
     <PortfolioP p='10px 0'>
       A Progressive Web Application built with React. Installable on mobile,
-      displays as normal app in app list. Automatically pulls the latest rates
-      any time it's used online and stores them locally, enabling offline use.
-      Will also attempt to autodetect country location and set that currency as
-      the inital.
+      displays as a normal app in phone app list. Automatically pulls the latest
+      rates any time it's used online and stores them locally, enabling offline
+      use. Will also attempt to autodetect country location by IP address to
+      select initial currency.
     </PortfolioP>
     <PortfolioP p='10px 0'>
       Key Contributions: App fully built by me.

@@ -8,7 +8,7 @@ const AK = () => (
     <PortfolioH3 asc> The Ant's Knapsack</PortfolioH3>
     <PortfolioP p='10px 0'>
       Worked as a front end developer on this multiplayer online video game
-      using vanilla JS, HTML, CSS and the animation library PixiJS. SocketIO
+      using vanilla JS, HTML, CSS and the animation library PixiJS. Socket.IO
       used for all backend requests.
     </PortfolioP>
     <PortfolioP p='10px 0'>
