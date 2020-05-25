@@ -22,11 +22,7 @@ const Span = styled.span`
   display: inline-block;
   margin-right: 10px;
   @media (min-width: 768px) {
-    display: block;
     margin: 10px;
-  }
-  @media (min-width: 1024px) {
-    display: inline-block;
   }
 `
 
