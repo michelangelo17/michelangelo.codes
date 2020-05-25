@@ -7,7 +7,7 @@ const F = () => (
   <SiteContainer m='20px 0' h='100%' minh='90%' p='10px' fdc mainColor w='95%'>
     <PortfolioH3 asc>Friends</PortfolioH3>
     <PortfolioP p='10px 0'>
-      A full stack javascript application with user authenticaton and
+      A full stack JavaScript application with user authentication and
       authorization, persistent data using PostgresQL, CD using Heroku, full
       CRUD functionality. React front end, Express back end. Express serves the
       react application on the same domain.

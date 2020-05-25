@@ -49,7 +49,7 @@ const About = () => (
     </AboutIntroP>
     <H3 m='10px'>Some of my favourite tools and languages are:</H3>
     <AboutP m='5px'>
-      <Span>• JavaScript</Span>
+      <Span>• JavaScript </Span>
       <Span>• Python </Span>
       <Span>• SQL </Span>
       <Span>• NodeJS </Span>
@@ -58,13 +58,13 @@ const About = () => (
       <Span>• Linux </Span>
       <Span>• React </Span>
       <Span>• Redux </Span>
-      <Span>• ReactRouter </Span>
-      <Span>• EmotionJS </Span>
-      <Span>• StyledComponents</Span>
+      <Span>• React Router </Span>
+      <Span>• Emotion </Span>
+      <Span>• styled-components </Span>
     </AboutP>
     <H3 m='10px'>Some things I'm currently studying:</H3>
     <AboutP m='5px'>
-      <Span>• AWS DevOps Certification </Span>
+      <Span>• AWS Certification </Span>
       <Span>• C </Span>
       <Span>• Django </Span>
     </AboutP>
