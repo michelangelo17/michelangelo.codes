@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlexContainer, H1, H2 } from '../../emotionalThings/EmoTools'
+import { FlexContainer, H1, H2, A } from '../../emotionalThings/EmoTools'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import background from './background.jpg'
@@ -23,11 +23,13 @@ const Splash = () => {
           Michelangelo Markus
         </H1>
         <H2 color='#f0f0f0'>Software Developer</H2>
-        <FlexContainer aife h='100%' p='20px'>
-          <a href='/#about'>
-            <FontAwesomeIcon icon={faChevronDown} size='5x' color='#f0f0f0' />
-          </a>
-        </FlexContainer>
+        {window.innerWidth < 1024 && (
+          <FlexContainer aife h='100%' p='20px'>
+            <A href='/#about'>
+              <FontAwesomeIcon icon={faChevronDown} size='5x' color='#f0f0f0' />
+            </A>
+          </FlexContainer>
+        )}
       </FlexContainer>
     </>
   )

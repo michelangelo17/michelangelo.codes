@@ -4,6 +4,7 @@ import EmoGlobal from './emotionalThings/EmoGlobal'
 import Menu from './components/menu'
 import About from './components/about'
 import Contact from './components/contact'
+import Portfolio from './components/portfolio'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Menu />
       <Splash />
       <About />
+      <Portfolio />
       <Contact />
     </>
   )
