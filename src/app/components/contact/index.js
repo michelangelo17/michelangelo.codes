@@ -6,38 +6,53 @@ import {
   faLinkedin,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import styled from '@emotion/styled/macro'
+
+const ContactGroupContainer = styled(FlexContainer)`
+  @media (min-width: 768px) {
+    width: 550px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+`
+const ContactContainer = styled(FlexContainer)`
+  @media (min-width: 768px) {
+    padding: 20px;
+    margin: 20px 20px 30px;
+  }
+`
 
 const Contact = () => (
-  <FlexContainer minh='100vh' p='50px 0 0 0' id='contact' fdc>
+  <FlexContainer minh='100vh' p='70px 0 100px 0' id='contact' fdc mainColor>
     <H2 asc m='10px'>
       Contact Me
     </H2>
-    <FlexContainer fdc aic w='100%'>
-      <FlexContainer
+    <ContactGroupContainer fdc aic w='100%'>
+      <ContactContainer
         as='a'
         href='mailto:m@michelangelo.codes'
         p='10px'
         td='none'
         bs
         br='5px'
-        m='10px'
+        m='10px 10px 15px'
         w='90%'
         jcsb
       >
-        <FontAwesomeIcon icon={faPaperPlane} size='4x' color='#f46658' />
+        <FontAwesomeIcon icon={faEnvelope} size='4x' color='#f46658' />
         <P asc ta='center' w='80%'>
           m@michelangelo.codes
         </P>
-      </FlexContainer>
-      <FlexContainer
+      </ContactContainer>
+      <ContactContainer
         as='a'
         href='https://www.linkedin.com/in/michelangelo-markus'
         p='10px'
         td='none'
         bs
         br='5px'
-        m='10px'
+        m='15px 10px'
         w='90%'
         jcsb
       >
@@ -45,15 +60,15 @@ const Contact = () => (
         <P asc ta='center' w='80%'>
           /in/michelangelo-markus
         </P>
-      </FlexContainer>
-      <FlexContainer
+      </ContactContainer>
+      <ContactContainer
         as='a'
         href='https://github.com/michelangelo17'
         p='10px'
         td='none'
         bs
         br='5px'
-        m='10px'
+        m='15px 10px'
         w='90%'
         jcsb
       >
@@ -61,15 +76,15 @@ const Contact = () => (
         <P asc ta='center' w='80%'>
           michelangelo17
         </P>
-      </FlexContainer>
-      <FlexContainer
+      </ContactContainer>
+      <ContactContainer
         as='a'
         href='https://twitter.com/devmichelangelo'
         p='10px'
         td='none'
         bs
         br='5px'
-        m='10px'
+        m='15px 10px 10px'
         w='90%'
         jcsb
       >
@@ -77,8 +92,8 @@ const Contact = () => (
         <P asc ta='center' w='80%'>
           @devmichelangelo
         </P>
-      </FlexContainer>
-    </FlexContainer>
+      </ContactContainer>
+    </ContactGroupContainer>
     <FlexContainer
       pos='absolute'
       as='footer'

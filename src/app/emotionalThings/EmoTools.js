@@ -10,7 +10,7 @@ WebFont.load({
 
 export const styleVariables = {
   mainFontColor: '#22282e',
-  mainBackgroundColor: '#edf1f2',
+  mainBackgroundColor: '#FAFAFA',
   mainBrandColor: '#797564',
   secondaryFontColor: '#6e89a0',
   secondaryBackgroundColor: '#81a2a6',
@@ -23,8 +23,8 @@ export const styleVariables = {
   fontSizeH5: null,
   fontSizeH6: null,
   fontSizeH7: null,
-  fontSizeP: '1.4rem',
-  fontSizeSmall: '1.2rem',
+  fontSizeP: '1.2rem',
+  fontSizeSmall: '1rem',
   boxShadow: '0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.1)',
 }
 
@@ -142,6 +142,7 @@ export const FlexContainer = styled.div`
   right: ${(props) => props.right};
   bottom: ${(props) => props.bottom};
   left: ${(props) => props.left};
+  text-align: ${(props) => props.ta};
 `
 
 export const BasicImg = styled.img`
@@ -153,6 +154,7 @@ export const BasicImg = styled.img`
   max-width: ${(props) => props.maxw};
   min-height: ${(props) => props.minh};
   max-height: ${(props) => props.maxh};
+  border: ${(props) => props.border};
   border-radius: ${(props) => props.br};
 `
 
@@ -172,6 +174,9 @@ export const H1 = styled.h1`
   font-family: ${styleVariables.mainFontFamily};
   font-weight: ${(props) => props.fw || 'bold'};
   text-align: ${(props) => props.ta};
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
 `
 export const H2 = styled.h2`
   align-self: ${alignSelfMap};
@@ -261,7 +266,7 @@ export const TextInput = styled.input`
   max-height: ${(props) => props.maxh};
   font-size: ${(props) => props.fs || styleVariables.fontSizeSmall};
 `
-export const EmoNavLink = styled.a`
+export const A = styled.a`
   align-self: ${alignSelfMap};
   justify-self: ${justifySelfMap};
   width: ${(props) => props.w};
@@ -283,8 +288,4 @@ export const EmoNavLink = styled.a`
   &:hover {
     filter: brightness(0.9);
   }
-`
-export const Span = styled.span`
-  display: inline-block;
-  margin-right: 10px;
 `
