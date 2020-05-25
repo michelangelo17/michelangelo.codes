@@ -25,7 +25,7 @@ const Span = styled.span`
 `
 
 const AboutIntroP = styled(P)`
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     margin: 50px 10px;
   }
 `
