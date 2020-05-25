@@ -11,8 +11,6 @@ const AboutContainer = styled(FlexContainer)`
 const AboutP = styled(P)`
   @media (min-width: 768px) {
     margin: 20px;
-  }
-  @media (min-width: 1024px) {
     text-align: left;
     margin: 20px 0;
   }
