@@ -59,12 +59,12 @@ const About = () => (
     <H3 m='10px'>Some things I'm currently studying:</H3>
     <AboutP m='5px'>
       <Span>• AWS Certification </Span>
-      <Span>• C </Span>
-      <Span>• Django </Span>
+      <Span>• TypeScript </Span>
     </AboutP>
     <H3 m='10px'>Next up:</H3>
     <AboutP m='5px'>
-      <Span>• TypeScript </Span>
+      <Span>• C </Span>
+      <Span>• Django </Span>
       <Span>• Go </Span>
       <Span>• Rust </Span>
       <Span>• Azure </Span>
