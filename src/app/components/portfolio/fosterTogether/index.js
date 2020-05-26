@@ -22,9 +22,7 @@ const FT = () => (
       Stack Developer, primarily on the backend and handled all DevOps. Hosted
       fully on AWS using Elastic Beanstalk, CodeBuild, S3, CloudFront, RDS and
       CodePipeline. Fully automated CD/CI pipeline designed, with manual review
-      from staging to production. The project is ongoing with a new team. At the
-      time of writing, you can log in as a dummy administrator to see an admin
-      dashboard with grace@email.com, password grace.
+      from staging to production. The project is ongoing with a new team.
     </PortfolioP>
     <PortfolioP p='10px 0'>
       Key Contributions: Application architecture, CI/CD, AWS Deployment,
