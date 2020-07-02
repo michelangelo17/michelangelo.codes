@@ -1,20 +1,20 @@
 import React from 'react'
 import { BasicImg, A } from '../../../emotionalThings/EmoTools'
 import gameplay from './gameplay.png'
-import { SiteContainer, PortfolioH3, PortfolioP } from '../emoPortfolio'
+import { SiteContainer, ProjectsH3, ProjectsP } from '../emoProjects'
 
 const AK = () => (
   <SiteContainer m='20px 0' h='100%' minh='90%' p='10px' fdc mainColor w='95%'>
-    <PortfolioH3 asc> The Ant's Knapsack</PortfolioH3>
-    <PortfolioP p='10px 0'>
+    <ProjectsH3 asc> The Ant's Knapsack</ProjectsH3>
+    <ProjectsP p='10px 0'>
       Worked as a front end developer on this multiplayer online video game
       using vanilla JS, HTML, CSS and the animation library PixiJS. Socket.IO
       used for all backend requests.
-    </PortfolioP>
-    <PortfolioP p='10px 0'>
+    </ProjectsP>
+    <ProjectsP p='10px 0'>
       Key Contributions: Map, ant movement and animation, room changes, store
       logic.
-    </PortfolioP>
+    </ProjectsP>
     <A
       m='0 auto'
       p='10px 0 20px'

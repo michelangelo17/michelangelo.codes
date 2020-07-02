@@ -35,8 +35,8 @@ const Menu = () => (
     <A href='/#about' color='white' bold='600'>
       About
     </A>
-    <A href='/#portfolio' color='white' bold='600'>
-      Portfolio
+    <A href='/#projects' color='white' bold='600'>
+      Projects
     </A>
     <A href='/#contact' color='white' bold='600'>
       Contact

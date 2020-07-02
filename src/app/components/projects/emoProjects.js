@@ -9,12 +9,12 @@ export const SiteContainer = styled(FlexContainer)`
   }
 `
 
-export const PortfolioP = styled(P)`
+export const ProjectsP = styled(P)`
   @media (min-width: 768px) {
     margin: 10px;
   }
 `
-export const PortfolioH3 = styled(H3)`
+export const ProjectsH3 = styled(H3)`
   @media (min-width: 768px) {
     margin: 10px 0 20px;
   }
