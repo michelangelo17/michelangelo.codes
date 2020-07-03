@@ -4,7 +4,7 @@ import { FlexContainer, P, H3 } from '../../emotionalThings/EmoTools'
 export const SiteContainer = styled(FlexContainer)`
   @media (min-width: 768px) {
     padding: 40px;
-    margin: 25px 0;
+    margin: 25px auto;
     max-width: 1200px;
   }
 `

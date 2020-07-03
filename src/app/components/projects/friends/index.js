@@ -1,10 +1,18 @@
 import React from 'react'
 import { BasicImg, A } from '../../../emotionalThings/EmoTools'
-import friends from './friends.png'
+import friends from '../screenshots/friends.png'
 import { SiteContainer, ProjectsH3, ProjectsP } from '../emoProjects'
 
-const F = () => (
-  <SiteContainer m='20px 0' h='100%' minh='90%' p='10px' fdc mainColor w='95%'>
+const Friends = () => (
+  <SiteContainer
+    m='20px auto'
+    h='100%'
+    minh='90%'
+    p='10px'
+    fdc
+    mainColor
+    w='95%'
+  >
     <ProjectsH3 asc>Friends</ProjectsH3>
     <ProjectsP p='10px 0'>
       A full stack JavaScript application with user authentication and
@@ -27,4 +35,4 @@ const F = () => (
   </SiteContainer>
 )
 
-export default F
+export default Friends

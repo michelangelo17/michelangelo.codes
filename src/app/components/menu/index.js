@@ -1,11 +1,13 @@
 import React from 'react'
-import { FlexContainer, A } from '../../emotionalThings/EmoTools'
+import { FlexContainer, EmoNavLink } from '../../emotionalThings/EmoTools'
 import styled from '@emotion/styled/macro'
 
 const MenuContainer = styled(FlexContainer)`
+  bottom: 0;
   @media (min-width: 768px) {
     justify-content: space-around;
     padding: 0;
+    top: 0;
   }
   @media (min-width: 1024px) {
     width: 400px;
@@ -29,18 +31,18 @@ const Menu = () => (
     p='0 15px 0 15px'
     z={999}
   >
-    <A href='/#home' color='white' bold='600'>
+    <EmoNavLink to='/' color='white' bold='600'>
       Home
-    </A>
-    <A href='/#about' color='white' bold='600'>
+    </EmoNavLink>
+    <EmoNavLink to='about' color='white' bold='600'>
       About
-    </A>
-    <A href='/#projects' color='white' bold='600'>
+    </EmoNavLink>
+    <EmoNavLink to='projects' color='white' bold='600'>
       Projects
-    </A>
-    <A href='/#contact' color='white' bold='600'>
+    </EmoNavLink>
+    <EmoNavLink to='contact' color='white' bold='600'>
       Contact
-    </A>
+    </EmoNavLink>
   </MenuContainer>
 )
 export default Menu

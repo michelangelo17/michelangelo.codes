@@ -1,10 +1,18 @@
 import React from 'react'
 import { BasicImg, A } from '../../../emotionalThings/EmoTools'
-import fostertogether from './fostertogether.png'
+import fostertogether from '../screenshots/fostertogether.png'
 import { SiteContainer, ProjectsH3, ProjectsP } from '../emoProjects'
 
-const FT = () => (
-  <SiteContainer m='20px 0' h='100%' minh='90%' p='10px' fdc mainColor w='95%'>
+const FosterTogether = () => (
+  <SiteContainer
+    m='20px auto'
+    h='100%'
+    minh='90%'
+    p='10px'
+    fdc
+    mainColor
+    w='95%'
+  >
     <ProjectsH3 asc>Foster Together</ProjectsH3>
     <ProjectsP m='10px 0'>
       Foster Together is a nonprofit organization helping foster parents. View
@@ -51,4 +59,4 @@ const FT = () => (
   </SiteContainer>
 )
 
-export default FT
+export default FosterTogether

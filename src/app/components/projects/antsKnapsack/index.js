@@ -1,10 +1,18 @@
 import React from 'react'
 import { BasicImg, A } from '../../../emotionalThings/EmoTools'
-import gameplay from './gameplay.png'
+import gameplay from '../screenshots/gameplay.png'
 import { SiteContainer, ProjectsH3, ProjectsP } from '../emoProjects'
 
-const AK = () => (
-  <SiteContainer m='20px 0' h='100%' minh='90%' p='10px' fdc mainColor w='95%'>
+const AntsKnapsack = () => (
+  <SiteContainer
+    m='20px auto'
+    h='100%'
+    minh='90%'
+    p='10px'
+    fdc
+    mainColor
+    w='95%'
+  >
     <ProjectsH3 asc> The Ant's Knapsack</ProjectsH3>
     <ProjectsP p='10px 0'>
       Worked as a front end developer on this multiplayer online video game
@@ -29,4 +37,4 @@ const AK = () => (
   </SiteContainer>
 )
 
-export default AK
+export default AntsKnapsack

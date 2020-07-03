@@ -1,10 +1,18 @@
 import React from 'react'
 import { BasicImg, A } from '../../../emotionalThings/EmoTools'
-import currency from './currency.png'
+import currency from '../screenshots/currency.png'
 import { SiteContainer, ProjectsH3, ProjectsP } from '../emoProjects'
 
-const C = () => (
-  <SiteContainer m='20px 0' h='100%' minh='90%' p='10px' fdc mainColor w='95%'>
+const SimpleCurrencyExchange = () => (
+  <SiteContainer
+    m='20px auto'
+    h='100%'
+    minh='90%'
+    p='10px'
+    fdc
+    mainColor
+    w='95%'
+  >
     <ProjectsH3 asc>Simple Currency Exchange</ProjectsH3>
     <ProjectsP p='10px 0'>
       A Progressive Web Application built with React. Installable on mobile,
@@ -28,4 +36,4 @@ const C = () => (
   </SiteContainer>
 )
 
-export default C
+export default SimpleCurrencyExchange

@@ -1,6 +1,7 @@
 import styled from '@emotion/styled/macro'
 import WebFont from 'webfontloader'
 import styledMap from 'styled-map'
+import { NavLink, Link } from 'react-router-dom'
 
 WebFont.load({
   google: {
@@ -288,4 +289,62 @@ export const A = styled.a`
   &:hover {
     filter: brightness(0.9);
   }
+`
+export const EmoNavLink = styled(NavLink)`
+  align-self: ${alignSelfMap};
+  justify-self: ${justifySelfMap};
+  width: ${(props) => props.w};
+  height: ${(props) => props.h};
+  margin: ${(props) => props.m};
+  padding: ${(props) => props.p};
+  min-width: ${(props) => props.minw};
+  max-width: ${(props) => props.maxw};
+  min-height: ${(props) => props.minh};
+  max-height: ${(props) => props.maxh};
+  color: ${(props) => props.color || styleVariables.mainFontColor};
+  background-color: ${(props) => props.bgcolor || colorMap};
+  border-radius: ${(props) => props.br};
+  font-family: ${styleVariables.mainFontFamily};
+  font-size: ${(props) => props.fs || styleVariables.fontSizeP};
+  font-weight: ${(props) => props.bold};
+  text-decoration: ${(props) => props.textdec || 'none'};
+  border: none;
+  &:hover {
+    filter: brightness(0.9);
+  }
+`
+export const EmoLink = styled(Link)`
+  display: flex;
+  flex-direction: ${flexDirectionMap};
+  justify-content: ${justifyContentMap};
+  align-items: ${alignItemsMap};
+  align-content: ${alignContentMap};
+  align-self: ${alignSelfMap};
+  justify-self: ${justifySelfMap};
+  flex-wrap: ${flexWrapMap};
+  width: ${(props) => props.w};
+  height: ${(props) => props.h};
+  margin: ${(props) => props.m};
+  padding: ${(props) => props.p};
+  min-width: ${(props) => props.minw};
+  max-width: ${(props) => props.maxw};
+  min-height: ${(props) => props.minh};
+  max-height: ${(props) => props.maxh};
+  background-color: ${(props) => props.bgcolor || colorMap};
+  background-image: url(${(props) => props.bgimg});
+  background-position: ${(props) => props.bgpos};
+  background-repeat: ${(props) => props.bgrep};
+  background-size: ${(props) => props.bgsize};
+  border-radius: ${(props) => props.br};
+  box-shadow: ${boxShadowMap};
+  z-index: ${(props) => props.z};
+  text-decoration: ${(props) => props.td};
+  border: ${(props) => props.border};
+  position: ${(props) => props.pos || 'relative'};
+  top: ${(props) => props.top};
+  right: ${(props) => props.right};
+  bottom: ${(props) => props.bottom};
+  left: ${(props) => props.left};
+  text-align: ${(props) => props.ta};
+  order: ${(props) => props.order};
 `
