@@ -1,5 +1,5 @@
 {
-  "name": "tmp",
+  "name": "michelangelo.codes",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,15 +9,15 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
-    "@microlink/react": "^5.2.2",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/react": "^10.4.3",
+    "@testing-library/user-event": "^12.0.11",
     "emotion-reset": "^2.0.7",
+    "history": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^6.0.0-beta.0",
     "react-scripts": "3.4.1",
-    "styled-components": "^5.1.0",
     "styled-map": "^3.3.0",
     "webfontloader": "^1.6.28"
   },
