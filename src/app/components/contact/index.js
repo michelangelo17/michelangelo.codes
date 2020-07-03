@@ -38,13 +38,13 @@ const ContactH2 = styled(H2)`
 `
 const FooterContainer = styled(FlexContainer)`
   @media (min-width: 1024px) {
-    padding: 15px;
+    padding: 20px;
   }
 `
 
 const Contact = () => (
   <>
-    <FlexContainer minh='100vh' p='10px' fdc mainColor>
+    <FlexContainer minh='calc(100vh - 90px)' p='10px' fdc mainColor>
       <ContactH2 asc m='15px'>
         Contact Me
       </ContactH2>
@@ -115,14 +115,7 @@ const Contact = () => (
         </ContactContainer>
       </ContactGroupContainer>
     </FlexContainer>
-    <FooterContainer
-      pos='absolute'
-      as='footer'
-      w='100%'
-      bottom='0'
-      p='0 0 80px'
-      fdc
-    >
+    <FooterContainer as='footer' w='100%' p='0 0 80px' fdc>
       <P m='0 auto' as='small' fs='1.2rem'>
         © 2020 Michelangelo Markus
       </P>
