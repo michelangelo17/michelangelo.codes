@@ -1,28 +1,11 @@
 import React from 'react'
 import { BasicImg, A } from '../../../emotionalThings/EmoTools'
 import gameplay from '../screenshots/gameplay.png'
-import { SiteContainer, ProjectsH3, ProjectsP } from '../emoProjects'
+import { SiteContainer, ProjectsH3, ProjectsP, Bold } from '../emoProjects'
 
 const AntsKnapsack = () => (
-  <SiteContainer
-    m='20px auto'
-    h='100%'
-    minh='90%'
-    p='10px'
-    fdc
-    mainColor
-    w='95%'
-  >
+  <SiteContainer h='100%' fdc w='95%' minh='100vh' p='10px 0 70px 0'>
     <ProjectsH3 asc> The Ant's Knapsack</ProjectsH3>
-    <ProjectsP p='10px 0'>
-      Worked as a front end developer on this multiplayer online video game
-      using vanilla JS, HTML, CSS and the animation library PixiJS. Socket.IO
-      used for all backend requests.
-    </ProjectsP>
-    <ProjectsP p='10px 0'>
-      Key Contributions: Map, ant movement and animation, room changes, store
-      logic.
-    </ProjectsP>
     <A
       m='0 auto'
       p='10px 0 20px'
@@ -31,9 +14,32 @@ const AntsKnapsack = () => (
     >
       View code on GitHub
     </A>
-    <A href='https://the-ants-knapsack.netlify.app'>
-      <BasicImg src={gameplay} w='100%' />
+    <A
+      m='0 auto'
+      p='10px 0 20px'
+      textdec='underline'
+      href='https://the-ants-knapsack.netlify.app'
+    >
+      Deployed Site
     </A>
+    <ProjectsP p='10px 0'>
+      This is a multiplayer online game built in a week with a team of five
+      developers. I focused almost exclusively on the front end which was built
+      with vanilla Javascript, the PixiJS library and communicated with the
+      Flask backend using SocketIO. It's based loosly on the classic Knapsack
+      Problem. In it players can play as an ant through a generated map, moving
+      from room to room in an attempt to get the most valuable combination of
+      items under their weight limit. There is a basic real time chat for any
+      players in the same room, a scoreboard and a store. Give it a try!
+    </ProjectsP>
+    <ProjectsP p='10px 0'>
+      <Bold>Key Contributions:</Bold> Map, ant movement and animation, room
+      changes, store logic.
+    </ProjectsP>
+    <ProjectsP p='10px 0'>
+      <Bold>Stack:</Bold> HTML, CSS, JavaScript, PixiJS, SocketIO, Netlify.
+    </ProjectsP>
+    <BasicImg src={gameplay} w='100%' />
   </SiteContainer>
 )
 

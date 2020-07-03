@@ -347,4 +347,7 @@ export const EmoLink = styled(Link)`
   left: ${(props) => props.left};
   text-align: ${(props) => props.ta};
   order: ${(props) => props.order};
+  &:hover {
+    filter: brightness(0.9);
+  }
 `
