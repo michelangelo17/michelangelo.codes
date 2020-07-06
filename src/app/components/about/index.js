@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlexContainer, P, H2, H3 } from '../../emotionalThings/EmoTools'
+import { FlexContainer, Text } from '../../emotionalThings/EmoTools'
 import styled from '@emotion/styled/macro'
 
 const AboutContainer = styled(FlexContainer)`
@@ -20,12 +20,12 @@ const Span = styled.span`
   }
 `
 
-const AboutIntroP = styled(P)`
+const AboutIntroP = styled(Text)`
   @media (min-width: 768px) {
     margin: 50px 10px;
   }
 `
-const AboutH2 = styled(H2)`
+const AboutH2 = styled(Text)`
   @media (min-width: 768px) {
     margin: 80px 10px 10px;
   }
@@ -35,18 +35,20 @@ const AboutH2 = styled(H2)`
 `
 
 const About = () => (
-  <AboutContainer minh='100vh' p='10px 0 70px 0' fdc mainColor>
-    <AboutH2 asc m='15px'>
+  <AboutContainer minh='100vh' p='10px 0 70px 0' fdc>
+    <AboutH2 as='h2' fw='bold' h2 asc m='15px'>
       About Me
     </AboutH2>
-    <AboutIntroP m='10px 15px'>
+    <AboutIntroP as='p' lh='1.25' m='10px 15px'>
       Hello! I am a software developer specializing in full stack web
       development. Originally from Portland, OR. Formally a Computer Science
       Teacher in Cambodia. Presently working remotely as a Team Lead for Lambda,
       Inc from Brooklyn, NY.
     </AboutIntroP>
-    <H3 m='10px 15px'>Some of my favourite tools and languages are:</H3>
-    <P m='5px'>
+    <Text as='h3' fw='bold' h3 m='10px 15px'>
+      Some of my favourite tools and languages are:
+    </Text>
+    <Text as='p' lh='1.25' m='5px'>
       <Span>JavaScript </Span>
       <Span>Python </Span>
       <Span>SQL </Span>
@@ -60,20 +62,24 @@ const About = () => (
       <Span>Emotion </Span>
       <Span>Amazon Web Services </Span>
       <Span>Styled Components </Span>
-    </P>
-    <H3 m='10px 15px'>Some things I'm currently studying:</H3>
-    <P m='5px'>
+    </Text>
+    <Text as='h3' fw='bold' h3 m='10px 15px'>
+      Some things I'm currently studying:
+    </Text>
+    <Text as='p' lh='1.25' m='5px'>
       <Span>TypeScript </Span>
       <Span>AWS Certification </Span>
-    </P>
-    <H3 m='10px 15px'>Next up:</H3>
-    <P m='5px'>
+    </Text>
+    <Text as='h3' fw='bold' h3 m='10px 15px'>
+      Next up:
+    </Text>
+    <Text as='p' lh='1.25' m='5px'>
       <Span>Django </Span>
       <Span>Go </Span>
       <Span>Rust </Span>
       <Span>Azure </Span>
       <Span>Google Cloud </Span>
-    </P>
+    </Text>
   </AboutContainer>
 )
 
