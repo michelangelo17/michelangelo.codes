@@ -1,5 +1,5 @@
 import React from 'react'
-import { H2, FlexContainer, P } from '../../emotionalThings/EmoTools'
+import { FlexContainer, Text } from '../../emotionalThings/EmoTools'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faTwitter,
@@ -28,7 +28,7 @@ const ContactContainer = styled(FlexContainer)`
     margin: 20px;
   }
 `
-const ContactH2 = styled(H2)`
+const ContactH2 = styled(Text)`
   @media (min-width: 768px) {
     margin: 80px 10px 10px;
   }
@@ -45,7 +45,7 @@ const FooterContainer = styled(FlexContainer)`
 const Contact = () => (
   <>
     <FlexContainer minh='calc(100vh - 90px)' p='10px' fdc mainColor>
-      <ContactH2 asc m='15px'>
+      <ContactH2 as='h2' fw='bold' h2 asc m='15px'>
         Contact Me
       </ContactH2>
       <ContactGroupContainer fdc aic w='100%'>
@@ -61,9 +61,9 @@ const Contact = () => (
           jcsb
         >
           <FontAwesomeIcon icon={faEnvelope} size='4x' color='#f46658' />
-          <P asc ta='center' w='80%'>
+          <Text as='p' asc ta='center' w='80%'>
             m@michelangelo.codes
-          </P>
+          </Text>
         </ContactContainer>
         <ContactContainer
           as='a'
@@ -77,9 +77,9 @@ const Contact = () => (
           jcsb
         >
           <FontAwesomeIcon icon={faLinkedin} size='4x' color='#2867b2' />
-          <P asc ta='center' w='80%'>
+          <Text as='p' asc ta='center' w='80%'>
             /in/michelangelo-markus
-          </P>
+          </Text>
         </ContactContainer>
         <ContactContainer
           as='a'
@@ -93,9 +93,9 @@ const Contact = () => (
           jcsb
         >
           <FontAwesomeIcon icon={faGithub} size='4x' color='#333' />
-          <P asc ta='center' w='80%'>
+          <Text as='p' p asc ta='center' w='80%'>
             michelangelo17
-          </P>
+          </Text>
         </ContactContainer>
         <ContactContainer
           as='a'
@@ -109,16 +109,16 @@ const Contact = () => (
           jcsb
         >
           <FontAwesomeIcon icon={faTwitter} size='4x' color='#00aced' />
-          <P asc ta='center' w='80%'>
+          <Text as='p' asc ta='center' w='80%'>
             @devmichelangelo
-          </P>
+          </Text>
         </ContactContainer>
       </ContactGroupContainer>
     </FlexContainer>
     <FooterContainer as='footer' w='100%' p='0 0 80px' fdc>
-      <P m='0 auto' as='small' fs='1.2rem'>
+      <Text small m='0 auto' as='small' fs='1.2rem'>
         © 2020 Michelangelo Markus
-      </P>
+      </Text>
     </FooterContainer>
   </>
 )

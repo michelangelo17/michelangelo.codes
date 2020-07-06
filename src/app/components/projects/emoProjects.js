@@ -1,5 +1,5 @@
 import styled from '@emotion/styled/macro'
-import { FlexContainer, P, H3 } from '../../emotionalThings/EmoTools'
+import { FlexContainer, Text } from '../../emotionalThings/EmoTools'
 
 export const SiteContainer = styled(FlexContainer)`
   @media (min-width: 768px) {
@@ -12,12 +12,12 @@ export const SiteContainer = styled(FlexContainer)`
   }
 `
 
-export const ProjectsP = styled(P)`
+export const ProjectsP = styled(Text)`
   @media (min-width: 768px) {
     margin: 10px;
   }
 `
-export const ProjectsH3 = styled(H3)`
+export const ProjectsH3 = styled(Text)`
   @media (min-width: 768px) {
     margin: 10px 0 20px;
   }

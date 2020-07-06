@@ -1,6 +1,13 @@
 import React from 'react'
-import { FlexContainer, H1, H2 } from '../../emotionalThings/EmoTools'
+import { FlexContainer, Text } from '../../emotionalThings/EmoTools'
 import background from './background.jpg'
+import styled from '@emotion/styled/macro'
+
+const H1 = styled(Text)`
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+`
 
 const Splash = () => {
   const trueHeight = window.innerHeight
@@ -15,12 +22,20 @@ const Splash = () => {
         bgimg={background}
         bgsize='cover'
         bgpos='center'
-        id='home'
       >
-        <H1 m={`${trueHeight / 1.8}px 0 0 0`} color='#f0f0f0' p='0 0 5px 0'>
+        <H1
+          as='h1'
+          h1
+          m={`${trueHeight / 1.8}px 0 0 0`}
+          color='#f0f0f0'
+          p='0 0 5px 0'
+          fw='bold'
+        >
           Michelangelo Markus
         </H1>
-        <H2 color='#f0f0f0'>Software Developer</H2>
+        <Text as='h2' h2 fw='bold' color='#f0f0f0'>
+          Software Developer
+        </Text>
       </FlexContainer>
     </>
   )

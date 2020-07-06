@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   FlexContainer,
-  H2,
+  Text,
   BasicImg,
   EmoLink,
 } from '../../../emotionalThings/EmoTools'
@@ -11,7 +11,7 @@ import gameplay from '../screenshots/gameplay.png'
 import friends from '../screenshots/friends.png'
 import currency from '../screenshots/currency.png'
 
-const ProjectsH2 = styled(H2)`
+const ProjectsH2 = styled(Text)`
   @media (min-width: 768px) {
     margin: 80px 10px 70px;
   }
@@ -34,7 +34,7 @@ const ChangeProjectOrder = styled(EmoLink)`
 
 const ProjectsOverview = () => (
   <FlexContainer minh='100vh' p='10px 0 70px 0' fdc aic>
-    <ProjectsH2 asc m='15px'>
+    <ProjectsH2 as='h2' h2 fw='bold' asc m='15px'>
       My Projects
     </ProjectsH2>
     <ProjectLinksContainer fdc aic>
