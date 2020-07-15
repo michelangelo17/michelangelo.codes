@@ -23,7 +23,7 @@ const fontSizeMap = styledMap`
   h2: 2rem;
   h3: 1.6rem;
   small: 1rem;
-  p: 1.2rem;
+  default: 1.2rem;
 `
 
 const flexDirectionMap = styledMap`
@@ -84,6 +84,9 @@ export const FlexContainer = styled.div`
 export const BasicImg = styled.img`
   width: ${(props) => props.w};
   margin: ${(props) => props.m};
+  max-width: ${(props) => props.maxw};
+  border-radius: ${(props) => props.br};
+  align-self: ${alignSelfMap};
 `
 
 export const Text = styled.div`
@@ -96,7 +99,7 @@ export const Text = styled.div`
   max-width: ${(props) => props.maxw};
   min-height: ${(props) => props.minh};
   max-height: ${(props) => props.maxh};
-  font-size: ${(props) => props.fs || fontSizeMap};
+  font-size: ${(props) => (props.fs ? props.fs : fontSizeMap)};
   color: ${(props) => props.color || styleVariables.mainFontColor};
   font-family: ${(props) => props.ff || styleVariables.mainFontFamily};
   font-weight: ${(props) => props.fw};
