@@ -1,6 +1,7 @@
 import React from 'react'
-import { FlexContainer, Text } from '../../emotionalThings/EmoTools'
+import { FlexContainer, Text, BasicImg } from '../../emotionalThings/EmoTools'
 import styled from '@emotion/styled/macro'
+import me from './me.jpg'
 
 const AboutContainer = styled(FlexContainer)`
   @media (min-width: 768px) {
@@ -39,9 +40,10 @@ const About = () => (
     <AboutH2 as='h2' fw='bold' h2 asc m='15px'>
       About Me
     </AboutH2>
+    <BasicImg src={me} alt='Hello' w='40%' maxw='250px' br='50%' asc />
     <AboutIntroP as='p' lh='1.25' m='10px 15px'>
-      Hello! I am a software developer specializing in full stack web
-      development. Originally from Portland, OR. Formally a Computer Science
+      Hello! I'm Michelangelo, a software developer specializing in full stack
+      web development. Originally from Portland, OR. Formally a Computer Science
       Teacher in Cambodia. Presently working remotely as a Team Lead for Lambda,
       Inc from Brooklyn, NY.
     </AboutIntroP>

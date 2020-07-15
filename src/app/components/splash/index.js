@@ -8,6 +8,11 @@ const H1 = styled(Text)`
     font-size: 3rem;
   }
 `
+const H2 = styled(Text)`
+  @media (min-width: 768px) {
+    font-size: 2.8rem;
+  }
+`
 
 const Splash = () => {
   const trueHeight = window.innerHeight
@@ -33,9 +38,9 @@ const Splash = () => {
         >
           Michelangelo Markus
         </H1>
-        <Text as='h2' h2 fw='bold' color='#f0f0f0'>
+        <H2 as='h2' h2 fw='bold' color='#f0f0f0'>
           Software Developer
-        </Text>
+        </H2>
       </FlexContainer>
     </>
   )
