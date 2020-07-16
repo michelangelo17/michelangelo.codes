@@ -8,6 +8,9 @@ const AboutContainer = styled(FlexContainer)`
     margin: 0px auto;
     max-width: 1100px;
   }
+  @media (min-width: 1024px) {
+    padding-bottom: 0;
+  }
 `
 
 const Span = styled.span`
