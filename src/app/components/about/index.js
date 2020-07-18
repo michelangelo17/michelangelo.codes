@@ -72,6 +72,7 @@ const About = () => (
       Some things I'm currently studying:
     </Text>
     <Text as='p' lh='1.25' m='5px'>
+      <Span>Java </Span>
       <Span>TypeScript </Span>
       <Span>AWS Certification </Span>
     </Text>
