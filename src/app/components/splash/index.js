@@ -39,7 +39,7 @@ const Splash = () => {
           Michelangelo Markus
         </H1>
         <H2 as='h2' h2 fw='bold' color='#f0f0f0'>
-          Software Developer
+          Solutions Architect
         </H2>
       </FlexContainer>
     </>

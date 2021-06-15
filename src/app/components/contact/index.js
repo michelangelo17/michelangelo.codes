@@ -117,7 +117,7 @@ const Contact = () => (
     </FlexContainer>
     <FooterContainer as='footer' w='100%' p='0 0 80px' fdc>
       <Text small m='0 auto' as='small' fs='1.2rem'>
-        © 2020 Michelangelo Markus
+        © 2021 Michelangelo Markus
       </Text>
     </FooterContainer>
   </>

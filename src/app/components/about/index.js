@@ -45,15 +45,17 @@ const About = () => (
     </AboutH2>
     <BasicImg src={me} alt='Hello' w='40%' maxw='250px' br='50%' asc />
     <AboutIntroP as='p' lh='1.25' m='10px 15px'>
-      Hello! I'm Michelangelo, a software developer specializing in full stack
-      web development. Originally from Portland, OR. Formally a Computer Science
-      Teacher in Cambodia. Presently working remotely as a Team Lead for Lambda,
-      Inc from Brooklyn, NY.
+      Hello! I'm Michelangelo, a Solutions Architect for AWS. This is my site
+      with little side projects and things I do to amuse myself, most of it is
+      old, but I will endevour to update this more in the future. (Some links
+      are also definitely broken, I'll fix them someday.) Any thoughts or
+      opinons expressed here are my own.
     </AboutIntroP>
     <Text as='h3' fw='bold' h3 m='10px 15px'>
       Some of my favourite tools and languages are:
     </Text>
     <Text as='p' lh='1.25' m='5px'>
+      <Span>Amazon Web Services </Span>
       <Span>JavaScript </Span>
       <Span>Python </Span>
       <Span>SQL </Span>
@@ -65,26 +67,7 @@ const About = () => (
       <Span>Redux </Span>
       <Span>React Router </Span>
       <Span>Emotion </Span>
-      <Span>Amazon Web Services </Span>
       <Span>Styled Components </Span>
-    </Text>
-    <Text as='h3' fw='bold' h3 m='10px 15px'>
-      Some things I'm currently studying:
-    </Text>
-    <Text as='p' lh='1.25' m='5px'>
-      <Span>Java </Span>
-      <Span>TypeScript </Span>
-      <Span>AWS Certification </Span>
-    </Text>
-    <Text as='h3' fw='bold' h3 m='10px 15px'>
-      Next up:
-    </Text>
-    <Text as='p' lh='1.25' m='5px'>
-      <Span>Django </Span>
-      <Span>Go </Span>
-      <Span>Rust </Span>
-      <Span>Azure </Span>
-      <Span>Google Cloud </Span>
     </Text>
   </AboutContainer>
 )

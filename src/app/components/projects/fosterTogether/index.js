@@ -19,7 +19,7 @@ const FosterTogether = () => (
     <A
       m='0 auto'
       p='10px 0 20px'
-      href='https://github.com/michelangelo17/foster-together-fe'
+      href='https://github.com/michelangelo17/foster-together-fe/tree/serverless'
       textdec='underline'
     >
       View front end on GitHub
@@ -28,7 +28,7 @@ const FosterTogether = () => (
       m='0 auto'
       p='10px 0 20px'
       textdec='underline'
-      href='https://app.fostertogether.co'
+      href='https://fostertogether.mytestdeployments.com/'
     >
       Deployed Site
     </A>
@@ -43,24 +43,16 @@ const FosterTogether = () => (
       and its volunteers.
     </ProjectsP>
     <ProjectsP as='p' lh='1.25' m='10px 0'>
-      Planned and designed app with a team of 5 developers including myself, and
-      2 UX designers over a 7 week period to design, architect and build the app
-      to the stakeholders specifications. Used Agile methodology and held
-      frequent meetings with stakeholders to update and adapt product as it was
-      developed. Worked as a Full Stack Developer, primarily on the backend.
-      Solely built out full authentication/authorization system from scratch to
-      handle different distinct user types. Handled all AWS alone for both Front
-      End and Back End. Hosted fully on AWS using Elastic Beanstalk, CodeBuild,
-      S3, CloudFront, RDS and CodePipeline. Fully automated CD/CI pipeline
-      designed, with manual review from staging to production. The project is
-      ongoing with a new team. The GitHub links are a fork of the project at the
-      time my team moved on.
+      This is a project that I worked with on a team and later refactored to be
+      fully serverless. The backend repo is there for reference, but the link
+      shown is a front end site hosted on Amplify and using API gateway, Lambda,
+      Cognito and DynamoDB.
     </ProjectsP>
     <ProjectsP as='p' lh='1.25' m='10px 0'>
       <Bold>Key Contributions:</Bold> Application architecture, CI/CD, AWS
       Deployment, authentication/authorization, database design, Backend
       Engineering, SendGrid integration, front end state management with Redux
-      Toolkit.
+      Toolkit. Serverless refactor of backend.
     </ProjectsP>
     <ProjectsP as='p' lh='1.25' m='10px 0'>
       <Bold>Stack:</Bold> React, Express, Redux Toolkit, Knex, Styled
