@@ -16,10 +16,10 @@ const App = () => {
   return (
     <>
       <EmoGlobal />
-      <Menu />
+      {/* <Menu /> */}
       <Routes>
         <Route path='/' element={<Splash />} />
-        <Route path='about' element={<About />} />
+        {/* <Route path='about' element={<About />} />
         <Route path='projects' element={<Projects />}>
           <Route path='/' element={<ProjectsOverview />} />
           <Route path='foster-together' element={<FosterTogether />} />
@@ -29,8 +29,8 @@ const App = () => {
             path='simple-currency-exchange'
             element={<SimpleCurrencyExchange />}
           />
-        </Route>
-        <Route path='contact' element={<Contact />} />
+        </Route> */}
+        {/* <Route path='contact' element={<Contact />} /> */}
       </Routes>
     </>
   )

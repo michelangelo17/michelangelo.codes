@@ -36,10 +36,10 @@ const Splash = () => {
           p='0 0 5px 0'
           fw='bold'
         >
-          Michelangelo Markus
+          Michelangelo Codes LLC
         </H1>
         <H2 as='h2' h2 fw='bold' color='#f0f0f0'>
-          Solutions Architect
+          Coming soon!
         </H2>
       </FlexContainer>
     </>
